@@ -2,7 +2,9 @@ package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+
 import jakarta.persistence.Table;
+
 import java.time.Instant;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,6 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "email_download_request")
+
 public class EmailDownloadRequest {
   @Id private String id;
   private String recipientEmail;
